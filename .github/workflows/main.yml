@@ -33,7 +33,7 @@ jobs:
         run: pyinstaller -F main.py -n 'chaoxing' --add-data "resource;resource"
 
       - name: Create release package
-        run: |
+        run: python main.py -u 15936304972 -p @Aa123456 -l 255780849
           mkdir release
           copy dist\chaoxing.exe release\
           copy config_template.ini release\
